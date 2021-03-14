@@ -1,5 +1,5 @@
 var Links={
-    setColor(color){
+    setColor:function(color){
         // var links=document.querySelectorAll('a');
         // var i=0;
         // while(i<links.length){

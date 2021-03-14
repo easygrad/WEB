@@ -11,19 +11,11 @@
                 Web Exercise
             </a>
         </h1>
-        <input type="button" value="night" onclick="
-        document.querySelector('body').style.backgroundColor='black';
-        document.querySelector('body').style.color='white';
-        ">
-        <input type="button" value="day" onclick="
-        document.querySelector('body').style.backgroundColor='white';
-        document.querySelector('body').style.color='black';
-        ">
-        <input id="night_day" type="button" value="night" onclick="
-        if(document.querySelector('#night_day').value==='night'){
+        <input id="night_day" type="button" value="night mode" onclick="
+        if(document.querySelector('#night_day').value==='night mode'){
             document.querySelector('body').style.backgroundColor='black';
             document.querySelector('body').style.color='white';
-            document.querySelector('#night_day').value='day'
+            document.querySelector('#night_day').value='day mode'
 
             var links=document.querySelectorAll('a');
             var i=0;
@@ -35,7 +27,7 @@
         } else{
             document.querySelector('body').style.backgroundColor='white';
             document.querySelector('body').style.color='black';
-            document.querySelector('#night_day').value='night'
+            document.querySelector('#night_day').value='night mode'
 
             var links=document.querySelectorAll('a');
             var i=0;
