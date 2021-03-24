@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    
+    </head>
+    <body>
+        <script type="text/javascript">
+            //보이기
+            function div_show() {
+             document.getElementById("test_div").style.display = "block";
+            }
+            
+            //숨기기
+            function div_hide() {
+             document.getElementById("test_div").style.display = "none";
+            }
+           </script>
+            <div style="border: 1px solid" id="test_div">내용입니다.</div>
+            
+            <input type="button" value="보이기" onclick="div_show();"/>
+            <input type="button" value="숨기기" onclick="div_hide();"/>
+        
+        
+        <script>
+            function show() {
+                document.querySelector("p").style.display="block";
+            }
+            function hide() {
+                document.querySelector("p").style.display="none";
+            }
+        </script>
+            <p id="test">내용 보기 버튼 연습</p>
+            <input type="button" value="내용 보기" onclick="show();"/>
+            <input type="button" value="내용 숨기기" onclick="hide();"/>
+    </body>
+</html>

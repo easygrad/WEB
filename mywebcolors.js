@@ -27,3 +27,15 @@ function nightDayHandler(self){
         Links.setColor('blue')
     }
 }
+
+function showSummary(self){
+    var target=document.querySelector('p');
+    if(self.value=='요약보기'){
+        target.style.display='block'
+        self.value='숨기기'
+    } else{
+        target.style.display='none'
+        self.value='요약보기'
+    }
+    
+}
